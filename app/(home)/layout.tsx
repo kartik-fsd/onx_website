@@ -47,13 +47,12 @@ export const metadata = {
     locale: "en_IN",
     url: "https://www.onxwork.com/",
     siteName: "ONX",
-    title:
-      "ONX - Leading B2B Field Service Marketplace For Scalable Workforce Solutions",
+    title: "ONX - Leading B2B Field Service Marketplace",
     description:
       "ONX provides scalable onboarding and installation services for businesses across retail, telecom, and logistics industries in India.",
     images: [
       {
-        url: "https://opengraph.b-cdn.net/production/images/b51318b7-b743-4249-b4d7-8c0f1ddd8b68.jpg",
+        url: "https://tm-integration-aws.s3.amazonaws.com/passbook.jpg",
         width: 1200,
         height: 675,
         alt: "ONX - B2B Service Marketplace",
@@ -64,13 +63,10 @@ export const metadata = {
     card: "summary_large_image",
     site: "@onxwork",
     creator: "@KartikShettar",
-    title:
-      "ONX - Leading B2B Field Service Marketplace For Scalable Workforce Solutions",
+    title: "ONX - Leading B2B Field Service Marketplace",
     description:
       "ONX provides scalable onboarding and installation services for businesses across retail, telecom, and logistics industries in India.",
-    images: [
-      "https://opengraph.b-cdn.net/production/images/b51318b7-b743-4249-b4d7-8c0f1ddd8b68.jpg",
-    ],
+    images: ["https://tm-integration-aws.s3.amazonaws.com/passbook.jpg"],
   },
   robots: {
     index: true,
