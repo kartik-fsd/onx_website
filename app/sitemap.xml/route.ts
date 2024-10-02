@@ -3,7 +3,6 @@ import { NextResponse } from 'next/server';
 import { SitemapStream, streamToPromise } from 'sitemap';
 import { Readable } from 'stream';
 
-
 export async function GET() {
     try {
         const stream = new SitemapStream({ hostname: 'https://www.onxwork.com' });
@@ -20,6 +19,10 @@ export async function GET() {
         links.push({ url: '/#services', changefreq: 'monthly', priority: 0.8 });
         links.push({ url: '/#why-choose-us', changefreq: 'monthly', priority: 0.7 });
         links.push({ url: '/#FAQs', changefreq: 'monthly', priority: 0.6 });
+
+        // Future dynamic content (e.g., blog posts, case studies)
+        // const dynamicLinks = await fetchDynamicLinks(); // Fetch dynamic content here
+        // dynamicLinks.forEach(link => links.push(link));
 
         // Create a readable stream from the links array and pipe it to the sitemap stream
         const linkStream = Readable.from(links);
